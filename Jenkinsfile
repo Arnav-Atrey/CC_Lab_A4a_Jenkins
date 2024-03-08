@@ -6,7 +6,7 @@ pipeline {
         build 'PES1UG21CS108-1'
         sh 'g++ main.cpp -o output'
       }
-    }
+    },
 
     stage('Test') {
       steps {
@@ -19,7 +19,7 @@ pipeline {
         echo 'deploy'
       }
     }
-  }
+  },
 
   post{
     failure{
